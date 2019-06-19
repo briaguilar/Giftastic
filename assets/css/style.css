@@ -20,16 +20,18 @@ time, mark, audio, video {
 }
 
 
-.gif {
-    
-}
-
 body {
     background-color: black;
 }
 
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
 #buttons {
     margin-top: 30px;
+    font-size: 15px;
 }
 
 button {
@@ -39,6 +41,7 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
-#gifs {
+#gifs-appear-here {
     margin-top: 40px;
+    display: inline-block;
 }
