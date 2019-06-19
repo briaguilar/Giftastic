@@ -5,36 +5,43 @@
     <meta charset="UTF-8">
     <title>Giftastic</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <button data-person="puppy" id="puppy-button">click for puppies</button>
-    <button data-person="rami malek" id="rami-malek-button">Mr. Robot</button>
-    <button data-person="kanye west" id="kanye-west-button">Yeezus</button>
-    <button data-person="mac miller" id="mac-miller-button">Most Dope</button>
-    <button data-person="third eye blind" id="third-eye-blind-button">3EB</button>
-    <button data-person="drake" id="drake-button">oVo</button>
-    <button data-person="cardi b" id="card-b-button">eeeeooowwwww</button>
-    <button data-person="90s" id="90s-button">#tbt</button>
-    <button data-person="freddie mercury" id="freddie-mercury-button">Ayyyyoooo</button>
-    <button data-person="texas rangers" id="rangers-button">It's Baseball Time In Texas</button>
-    <button data-person="st louis" id="st-louis-button">Home of the 2019 Stanley Cup</button>
-    <button data-person="the office" id="the-office-button">Dunder Mifflin</button>
-    <button data-person="funny dog" id="funny-dog-button">derp</button>
-    <button data-person="sports bloopers" id="sports-bloopers-button">E for effort</button>
-    <button data-person="wow" id="wow-button">um what?</button>
-    <button data-person="money" id="money-button">when it's payday (expectation)</button>
-    <button data-person="poor" id="broke-button">when it's payday(reality)</button>
-    <button data-person="ellen" id="ellen-button">because everybody loves Ellen</button>
-    <button data-person="weightlifting" id="bodybuilder-button">click 4 gains</button>
-    <button data-person="vacation beach" id="beach-button">all the good comes in waves</button>
-    <button data-person="sunrise" id="sunrise-button">click if you like sunrises!</button>
-    <button data-person="sunset" id="sunset-button">click this one if you like sunsets!</button>
-    <button data-person="sidekick phone" id="cellphone-button">remember that one time...</button>
-    <div id="gifs-appear-here"></div>
+    <div class="container" id="buttons">
 
+        <button type="button" class="btn btn-outline-dark gif" data-person="puppy" id="puppy-button">click for puppies</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="rami malek" id="rami-malek-button">Mr. Robot</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="kanye west" id="kanye-west-button">Yeezus</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="mac miller" id="mac-miller-button">Most Dope</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="third eye blind" id="third-eye-blind-button">3EB</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="drake" id="drake-button">oVo</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="cardi b" id="card-b-button">eeeeooowwwww</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="90s" id="90s-button">#tbt</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="freddie mercury" id="freddie-mercury-button">Ayyyyoooo</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="texas rangers" id="rangers-button">It's Baseball Time In Texas</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="st louis" id="st-louis-button">Home of the 2019 Stanley Cup</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="the office" id="the-office-button">Dunder Mifflin</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="funny dog" id="funny-dog-button">derp</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="sports bloopers" id="sports-bloopers-button">E for effort</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="wow" id="wow-button">um what?</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="money" id="money-button">when it's payday (expectation)</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="poor" id="broke-button">when it's payday(reality)</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="ellen" id="ellen-button">because everybody loves Ellen</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="weightlifting" id="bodybuilder-button">click 4 gains</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="vacation beach" id="beach-button">all the good comes in waves</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="sunrise" id="sunrise-button">click if you like sunrises!</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="sunset" id="sunset-button">click this one if you like sunsets!</button>
+        <button type="button" class="btn btn-outline-dark gif" data-person="sidekick phone" id="cellphone-button">remember that one time...</button>
+    </div>
+
+    <div class="container" id="gifs">
+        <div id="gifs-appear-here">
+        </div>
+    </div>
 
     
     <script src="assets/javascript/app.js"></script>

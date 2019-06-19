@@ -24,13 +24,19 @@ $(document).ready(function() {
                     if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
                         var gifDiv = $("<div>");
 
+                        var rating = results[i].rating;
+
+                        var p = $("<p>").text("Rating: " + rating);
+
                         var personImage = $("<img>");
 
                         personImage.attr("src", results[i].images.fixed_height.url);
 
-                        gifDiv.append(personImage)
-
+                        gifDiv.append(p);
+                        gifDiv.append(personImage);
+                        
                         $("#gifs-appear-here").prepend(gifDiv);
+                        
                     }
                 }
             })
