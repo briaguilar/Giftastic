@@ -40,15 +40,16 @@ $(document).ready(function() {
                         
                         $("#gifs-appear-here").prepend(gifDiv);
 
-                        $(".gif").on("click", function() {
-                            if (state === play) {
-                                $(this).attr("src", )
-                            }
-                        })
                 }
+                $(".gif").on("click", function() {
+                    if ($(this).attr("src") === play) {
+                    $(this).attr("src", still);
+                    } else {
+                        $(this).attr("src", play);
+                    }
+                })
+
                 }
-                
-                
             })
     })
     
