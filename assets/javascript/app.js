@@ -5,7 +5,7 @@ $(document).ready(function() {
 
         var person = $(this).attr("data-person");
 
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=qQSqkVtM3n2TAwKHxosoCWlxDiFocfpw&limit=9";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=qQSqkVtM3n2TAwKHxosoCWlxDiFocfpw&limit=10";
 
         // Performing AJAX GET request
         $.ajax({
@@ -31,7 +31,6 @@ $(document).ready(function() {
                         var personImage = $("<img class='gif'>");
                         var play = results[i].images.fixed_height.url;
                         var still = results[i].images.original_still.url;
-                        var state = $(this).attr("src")
 
                         personImage.attr("src", play);
 
@@ -40,15 +39,17 @@ $(document).ready(function() {
                         
                         $("#gifs-appear-here").prepend(gifDiv);
 
-                }
-                $(".gif").on("click", function() {
-                    if ($(this).attr("src") === play) {
-                    $(this).attr("src", still);
-                    } else {
-                        $(this).attr("src", play);
-                    }
-                })
+                        //$(".gif").on("click", function() {
+                            //if ($(this).attr("src") === play) {
+                                //$(this).attr("src", still);
+                            //} else {
+                                //$(this).attr("src", play);
+                            //}
+                        //})
 
+                        
+                }
+                
                 }
             })
     })
